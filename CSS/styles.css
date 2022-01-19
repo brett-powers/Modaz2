@@ -12,3 +12,47 @@ body {
 html {
   font-size: 62.5%;
 }
+/*Lists*/
+.list {
+  list-style: none;
+}
+/*Links*/
+a {
+  text-decoration: none;
+}
+/*Navigation Bar*/
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav__logo {
+  padding: 25px;
+}
+.nav__menu {
+  align-self: center;
+  color: var(--color-primary);
+  font-size: 23px;
+  padding-right: 25px;
+}
+.nav__list-container {
+  width: 100%;
+}
+.nav__list {
+  background: var(--color-secondary);
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.nav__list-item {
+  padding: 1.3rem;
+  border-bottom: 1px solid #383636;
+}
+.nav__list-item > a {
+  color: var(--color-white);
+  transition: color 0.3s;
+}
+.nav__list-item > a:hover {
+  color: var(--color-primary);
+}
