@@ -8,6 +8,7 @@
 /*Typography*/
 body {
   font-family: poppins, Arial, Helvetica, sans-serif;
+  height: 200vh;
 }
 html {
   font-size: 62.5%;
@@ -25,6 +26,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .nav__logo {
   padding: 25px;
@@ -37,6 +42,7 @@ a {
 }
 .nav__list-container {
   width: 100%;
+  display: none;
 }
 .nav__list {
   background: var(--color-secondary);
@@ -55,4 +61,46 @@ a {
 }
 .nav__list-item > a:hover {
   color: var(--color-primary);
+}
+@media screen and (min-width: 975px) {
+  .navBar {
+    flex-wrap: nowrap;
+  }
+  .nav__logo {
+    padding-left: 50px;
+  }
+  .nav__menu {
+    display: none;
+  }
+  .nav__list-container {
+    display: flex;
+    width: auto;
+  }
+  .nav__list {
+    align-self: center;
+    background: var(--color-white);
+    display: flex;
+    font-size: 1.6rem;
+  }
+  .nav__list-item {
+    border-bottom: none;
+    padding-left: 20px;
+  }
+  .nav__list-item > a {
+    color: var(--color-black);
+  }
+  .nav__list-icon {
+    display: flex;
+    align-self: center;
+    font-size: 15px;
+    padding-right: 80px;
+  }
+  .nav__icon {
+    margin-left: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .nav__icon:hover {
+    color: var(--color-primary);
+  }
 }
