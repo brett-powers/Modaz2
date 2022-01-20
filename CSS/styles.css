@@ -130,3 +130,32 @@ a {
     color: var(--color-primary);
   }
 }
+/*Hero*/
+.hero__img {
+  background: 50% 50% url(../Images/necklace.jpg) no-repeat;
+  height: 450px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.hero__container {
+  margin-top: 100px;
+}
+.hero__trend,
+.hero__sale {
+  text-transform: uppercase;
+}
+.hero__trend {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.hero__collection {
+  font-size: 4.3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.hero__sale {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 15px 0 20px;
+}
