@@ -39,6 +39,24 @@ html {
   background: var(--color-primary);
   color: var(--color-white);
 }
+/*Grids*/
+.grid {
+  display: grid;
+  justify-content: center;
+}
+@media screen and (min-width: 575px) {
+  .grid--2x3 {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid--3x2 {
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 150px);
+  }
+}
 /*Layout*/
 main {
   margin: 0 15px;
@@ -192,6 +210,7 @@ a {
 }
 /*Features*/
 .feature {
+  display: block;
   margin-top: 50px;
 }
 .feature__mens,
@@ -223,4 +242,79 @@ a {
 }
 .feature__womens {
   background: 50% 50% url(../Images/people-4.jpg) no-repeat;
+}
+@media screen and (min-width: 575px) {
+  .feature {
+    display: grid;
+  }
+  .feature__mens,
+  .feature__kids,
+  .feature__accessories,
+  .feature__womens {
+    width: 250px;
+    justify-self: center;
+  }
+  .feature__mens,
+  .feature__womens {
+    height: 410px;
+    grid-row: span 2;
+  }
+  .feature__kids,
+  .feature__accessories {
+    height: 200px;
+    margin: 0;
+  }
+  .feature__accessories {
+    grid-column: 2;
+    grid-row: -3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature__grid {
+    grid-template-columns: auto;
+  }
+  .feature__womens {
+    grid-column: 3;
+  }
+  .feature__kids {
+    grid-column: 2;
+  }
+  .feature__accessories {
+    grid-row: -2;
+  }
+  .feature__mens,
+  .feature__kids,
+  .feature__accessories,
+  .feature__womens {
+    width: 250px;
+  }
+  .feature__mens,
+  .feature__womens {
+    height: 311px;
+  }
+  .feature__kids,
+  .feature__accessories {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .feature__grid {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 15px;
+  }
+  .feature__mens,
+  .feature__kids,
+  .feature__accessories,
+  .feature__womens {
+    width: 300px;
+  }
+  .feature__womens,
+  .feature__mens {
+    height: 410px;
+  }
+  .feature__kids,
+  .feature__accessories {
+    height: 200px;
+  }
 }
