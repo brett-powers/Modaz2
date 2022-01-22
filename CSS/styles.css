@@ -344,3 +344,80 @@ a {
 .product {
   margin-top: 50px;
 }
+/*Cards*/
+.card {
+  height: 400px;
+  width: 200px;
+  margin-top: 50px;
+  transition: box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 20px 5px #7c7c7c;
+}
+.card__header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.card__new,
+.card__sale {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 300;
+  display: inline-block;
+  padding: 5px 18px;
+  margin-left: 20px;
+}
+.card__new {
+  background: #6aba38;
+}
+.card__sale {
+  background: var(--color-primary);
+}
+.card__body {
+  text-align: center;
+}
+.card__img {
+  background: 50% 50% url(../Images/pink.jpg) no-repeat;
+  height: 150px;
+}
+.card__text {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.card__price {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+.color--red,
+.color--green,
+.color--black {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+}
+.color--red {
+  background: var(--color-primary);
+}
+.color--green {
+  background: #6aba38;
+  margin: 0 10px;
+}
+.color--black {
+  background: var(--color-black);
+}
+.card__footer {
+  height: 93px;
+  display: flex;
+  align-items: flex-end;
+}
+.card__btn {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s, background 0.3s;
+}
+.card:hover .card__btn {
+  opacity: 1;
+}
