@@ -49,6 +49,11 @@ h2 {
 .grid {
   display: grid;
   justify-content: center;
+  justify-items: center;
+}
+.grid--2x2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 @media screen and (min-width: 575px) {
   .grid--2x3 {
@@ -274,7 +279,6 @@ a {
   .feature__accessories,
   .feature__womens {
     width: 250px;
-    justify-self: center;
   }
   .feature__mens,
   .feature__womens {
@@ -409,7 +413,7 @@ a {
   background: var(--color-black);
 }
 .card__footer {
-  height: 93px;
+  height: 94px;
   display: flex;
   align-items: flex-end;
 }
@@ -420,4 +424,10 @@ a {
 }
 .card:hover .card__btn {
   opacity: 1;
+}
+@media screen and (min-width: 975px) {
+  .card__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
