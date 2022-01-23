@@ -431,3 +431,32 @@ a {
     justify-content: space-evenly;
   }
 }
+/*Spotlight*/
+.spotLight {
+  align-items: center;
+  background: var(--color-background-light);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+}
+.spotLight__trend,
+.spotLight__collection {
+  color: var(--color-secondary);
+}
+.spotLight__trend {
+  font-size: 2.3rem;
+  font-weight: 200;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
+.spotLight__collection {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.spotLight__sale {
+  font-size: 1.8rem;
+  color: #4e4d4d;
+  margin: 1.5rem 0 3rem;
+}
