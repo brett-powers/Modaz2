@@ -540,3 +540,37 @@ a {
     margin: 0 2rem;
   }
 }
+/*Latest*/
+.latest {
+  margin-top: 50px;
+}
+.latest__img-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.latest__img-1 {
+  background: 50% 50% url(../Images/people-1.jpg) no-repeat;
+  height: 350px;
+  width: 350px;
+}
+@media screen and (min-width: 675px) {
+  .latest__img-container {
+    gap: 10px;
+  }
+  .latest__img-1,
+  .latest__img-2 {
+    height: 300px;
+    width: 350px;
+  }
+  .latest__img-2 {
+    background: 50% 50% url(../Images/people-2.jpg) no-repeat;
+  }
+}
+@media screen and (min-width: 875px) {
+  .latest__img-3 {
+    background: 50% 50% url(../Images/people-3.jpg) no-repeat;
+    height: 300px;
+    width: 350px;
+  }
+}
