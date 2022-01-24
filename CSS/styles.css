@@ -460,3 +460,34 @@ a {
   color: #4e4d4d;
   margin: 1.5rem 0 3rem;
 }
+/*Sale*/
+.sale {
+  margin-top: 50px;
+}
+
+.sale__list-container {
+  text-align: center;
+}
+.sale__list {
+  padding-left: 0;
+  margin-top: 30px;
+}
+.sale__list-item {
+  border: 1px solid #a8a8a8;
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+.sale__list-item:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+@media screen and (min-width: 675px) {
+  .sale__list-item {
+    display: inline-block;
+    width: 10rem;
+  }
+}
